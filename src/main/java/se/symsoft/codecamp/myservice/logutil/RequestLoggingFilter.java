@@ -4,7 +4,6 @@
 package se.symsoft.codecamp.myservice.logutil;
 
 import org.glassfish.jersey.message.internal.ReaderWriter;
-import se.symsoft.cc2016.orderservice.logging.Logged;
 
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
