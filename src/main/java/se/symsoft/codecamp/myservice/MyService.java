@@ -3,11 +3,9 @@
  */
 package se.symsoft.codecamp.myservice;
 
-import com.amazonaws.AmazonWebServiceClient;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
-import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClient;
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 import org.glassfish.grizzly.http.server.HttpServer;
@@ -18,8 +16,6 @@ import se.symsoft.codecamp.myservice.logutil.RequestLoggingFilter;
 import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
 import java.net.URI;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class MyService extends ResourceConfig implements Runnable {
 
